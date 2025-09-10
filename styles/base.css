@@ -9,13 +9,23 @@
 
 *{
     padding: 0;
-    border: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: var(--body-font);
     color: var(--accent2-color);
+    font-size: 2.5em;
+}
+
+p{
+    display: block;
+    margin-inline-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 
 h1,h2 {
@@ -30,26 +40,28 @@ h1 {
 #course-title {
     display: block;
     text-align: center;
-    font-size: 3.4rem;
+    font-size: 5rem;
     color: var(--secondary-color);
     background-color: var(--accent1-color);
 }
 
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--secondary-color);
-    padding: 1rem 0;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav ul{
+    list-style-type: none;
 }
 
 nav a{
-    text-decoration: none;
-}
-
-nav a {
+    display: block;
     text-align: center;
     color: var(--accent2-color);
-    font-size: 1.8rem;
+    padding: 1rem;
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
@@ -58,8 +70,19 @@ nav a:hover {
     text-decoration: overline;
 }
 
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        gap: 0.5rem;
+    }
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
+
 main {
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -68,7 +91,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 8px;
@@ -78,4 +101,14 @@ footer {
     text-align: center;
     color: var(--secondary-color);
     background-color: var(--accent1-color);
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
 }
