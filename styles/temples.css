@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #2274a5;
+    --accent1-color: #eef7fc;
+    --accent2-color: #061923;
+}
+
+h1, h2 {
+    font-family: "Shrikhand", serif;
+}
+
+header {
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+}
+
+body {
+    font-family: "Farsan", cursive;
+    color: var(--accent2-color);
+}
+
+footer {
+    text-align: center;
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-size: 2.8rem;
+}
