@@ -5,19 +5,69 @@
 }
 
 h1, h2 {
-    font-family: "Shrikhand", serif;
+    font-family: "Racing Sans One", sans-serif;
+    font-weight: 400;
 }
 
-h1 {font-size: 4rem; font-weight: 5;}
+h1 {font-size: 5rem;}
 
 header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     color: var(--accent1-color);
     background-color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+nav {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    color: var(--accent1-color);
+    padding: 2.5rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    text-decoration: overline;
+}
+
+.active{
+    color: yellow;
+}
+
+nav ul li {
+    flex: 1 1 100%;
 }
 
 body {
     font-family: "Farsan", cursive;
     color: var(--accent2-color);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+img {
+    margin: auto;
+    width: 500px;
 }
 
 footer {
