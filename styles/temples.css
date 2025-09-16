@@ -8,6 +8,8 @@ h1, h2 {
     font-family: "Shrikhand", serif;
 }
 
+h1 {font-size: 4rem; font-weight: 5;}
+
 header {
     color: var(--accent1-color);
     background-color: var(--primary-color);
