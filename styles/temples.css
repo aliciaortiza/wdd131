@@ -15,7 +15,9 @@ h1 {
 
 header {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
     color: var(--accent1-color);
     background-color: var(--primary-color);
     font-size: 2.5rem;
@@ -23,8 +25,11 @@ header {
 }
 
 #menu {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
     background: none;
     border: none;
+    border-radius: 5px;
     font-size: 2rem;
     color: var(--accent1-color);
     display: block;
@@ -39,11 +44,15 @@ nav {
 }
 
 nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: none;
 }
 
 nav ul.open {
     display: block;
+    margin-top: 1rem;
 }
 
 nav a {
@@ -73,16 +82,36 @@ body {
     color: var(--accent2-color);
 }
 
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     max-width: 800px;
     margin: 0 auto;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
 img {
-    margin: auto;
-    width: 500px;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+figure {
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer {

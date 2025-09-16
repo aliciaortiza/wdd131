@@ -5,7 +5,10 @@
     }
 
     main{
-        grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 
     #menu{
