@@ -9,7 +9,9 @@ h1, h2 {
     font-weight: 400;
 }
 
-h1 {font-size: 5rem;}
+h1 {
+    font-size: 3rem;
+}
 
 header {
     display: grid;
@@ -20,6 +22,15 @@ header {
     font-weight: 400;
 }
 
+#menu {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--accent1-color);
+    display: block;
+    margin: 1rem auto;
+}
+
 nav {
     background-color: var(--primary-color);
     margin: 0 auto;
@@ -28,7 +39,11 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
 }
 
 nav a {
@@ -75,5 +90,5 @@ footer {
     color: var(--accent1-color);
     background-color: var(--primary-color);
     padding: 1rem;
-    font-size: 2.8rem;
+    font-size: 1.8rem;
 }
