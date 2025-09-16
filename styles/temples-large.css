@@ -4,11 +4,12 @@
         gap: 0.5rem;
     }
 
-    main{
-        max-width: 1200px;
+    .gallery{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     #menu{
