@@ -1,4 +1,4 @@
-@media (min-width: 1180px) {
+@media (min-width: 1000px) {
     .weather-title::after {
         content: "⛅";
         font-size: 1.5rem;
@@ -62,11 +62,11 @@
 
     .data-box p,
     .weather-box p {
-        font-size: clamp(2.5rem, 1.5vw, 3rem);
+        font-size: clamp(1rem, 1.5vw, 3rem);
     }
 
     .data-box h2,
     .weather-box h2 {
-        font-size: clamp(2.5rem, 1.5vw, 6rem);
+        font-size: clamp(1rem, 1.5vw, 6rem);
     }
 }
