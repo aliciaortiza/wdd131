@@ -106,6 +106,16 @@ function displayTemples(templesArray) {
     templesArray.forEach((temple) => {
         const card = document.createElement("section");
 
+        card.style.backgroundColor = "var(--accent1-color)";
+        card.style.border = "2px solid var(--primary-color)";
+        card.style.borderRadius = "10px";
+        card.style.padding = "1rem";
+        card.style.margin = "1rem auto";
+        card.style.maxWidth = "500px";
+        card.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
+        card.style.textAlign = "left";
+
+
         const name = document.createElement("h3");
         name.textContent = temple.templeName;
 
@@ -119,6 +129,10 @@ function displayTemples(templesArray) {
         area.textContent = `Area: ${temple.area.toLocaleString()} sq ft`;
 
         const image = document.createElement("img");
+        image.style.borderRadius = "8px";
+        image.style.marginTop = "1rem";
+        image.style.width = "100%";
+
         image.setAttribute("src", temple.imageUrl);
         image.setAttribute("alt", temple.templeName);
         image.setAttribute("loading", "lazy");
@@ -139,16 +153,16 @@ function filterTemples(criteria) {
     let filtered = [];
 
     switch (criteria) {
-        case "old":
+        case "Old":
             filtered = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
             break;
-        case "new":
+        case "New":
             filtered = temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
             break;
-        case "large":
+        case "Large":
             filtered = temples.filter(t => t.area > 90000);
             break;
-        case "small":
+        case "Small":
             filtered = temples.filter(t => t.area < 10000);
             break;
         default:
@@ -158,8 +172,17 @@ function filterTemples(criteria) {
     displayTemples(filtered);
 }
 
-document.getElementById("home").addEventListener("click", () => filterTemples("home"));
-document.getElementById("old").addEventListener("click", () => filterTemples("old"));
-document.getElementById("new").addEventListener("click", () => filterTemples("new"));
-document.getElementById("large").addEventListener("click", () => filterTemples("large"));
-document.getElementById("small").addEventListener("click", () => filterTemples("small"));
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const category = link.textContent;
+
+        document.querySelector("h2").textContent = category;
+
+        document.querySelectorAll("nav a").forEach(a => a.classList.remove("active"));
+        link.classList.add("active");
+
+        filterTemples(category);
+    });
+});
