@@ -111,7 +111,7 @@ function displayTemples(templesArray) {
         card.style.borderRadius = "10px";
         card.style.padding = "1rem";
         card.style.margin = "1rem auto";
-        card.style.maxWidth = "500px";
+        card.style.maxWidth = "1000px";
         card.style.boxShadow = "0 4px 8px rgba(0,0,0,0.2)";
         card.style.textAlign = "left";
 
