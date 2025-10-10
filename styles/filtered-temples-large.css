@@ -10,10 +10,21 @@
         gap: 1rem;
         max-width: 1200px;
         margin: 0 auto;
-        font-size: clamp(1rem, 1.5vw, 3rem);
     }
 
     #menu {
         display: none;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2.5rem;
     }
 }
