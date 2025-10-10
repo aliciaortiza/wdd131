@@ -23,6 +23,13 @@ h1, h2 {
     font-family: var(--font-heading);
 }
 
+h3 {
+    font-family: var(--font-special);
+    color: var(--color-accent);
+    text-align: center;
+    font-size: 2rem;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
