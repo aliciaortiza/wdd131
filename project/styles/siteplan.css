@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #21E8E1;
-    --color-secondary: #34A864;
-    --color-accent: #FAA80F;
-    --color-background: #EDFDFD;
+    --color-primary: #7d5936;
+    --color-secondary: #2f7b4f;
+    --color-accent: #bb3e5c;
+    --color-background: #F4F1EC;
     --color-text: #042524;
 
     --font-heading: 'Montserrat', sans-serif;
@@ -33,8 +33,7 @@ h3 {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: var(--color-primary);
-    color: var(--color-text);
+    color: var(--color-primary);
     text-align: center;
     padding: 2rem 1rem;
 }
@@ -71,22 +70,22 @@ li{
 }
 
 .primary-color {
-    border: 10px solid #21E8E1;
+    border: 10px solid #7d5936;
     text-align: center;
 }
 
 .secondary-color {
-    border: 10px solid #34A864;
+    border: 10px solid #2f7b4f;
     text-align: center;
 }
 
 .accent-color {
-    border: 10px solid #FAA80F;
+    border: 10px solid #bb3e5c;
     text-align: center;
 }
 
 .background-color {
-    border: 10px solid #EDFDFD;
+    border: 10px solid #F4F1EC;
     text-align: center;
 }
 
@@ -121,7 +120,7 @@ img {
 
 footer {
     text-align: center;
-    color: var(--color-text);
+    color: var(--color-background);
     background-color: var(--color-primary);
     padding: 1rem;
     font-size: 1.8rem;
