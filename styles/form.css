@@ -1,9 +1,14 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: "Merriweather",serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
 }
 
 header,
@@ -15,7 +20,7 @@ footer {
 }
 
 main {
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
     margin: 2rem auto;
     padding: 1rem;
