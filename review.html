@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Alicia Ortiz">
+  <meta name="description" content=" ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+  <link rel="stylesheet" href="styles/example">
+  <script src="scripts/example" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Thank You for Your Review!</h1>
+        <p>Your feedback has been submitted successfully.</p>
+        <p>Total reviews submitted: <span id="reviewCount"></span></p>
+    </main>
+
+    <script>
+        let count = localStorage.getItem('reviewCount');
+        count = count ? parseInt(count) + 1 : 1;
+        localStorage.setItem('reviewCount', count);
+        document.getElementById('reviewCount').textContent = count;
+    </script>
+</body>
+</html>
+
