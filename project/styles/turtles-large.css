@@ -1,0 +1,147 @@
+@media (min-width: 1000px) {
+    h1{
+        font-size: 4.5rem;
+    }
+    .header-logo{
+        width: 8rem;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .header-nav {
+        margin-left: 0;
+        background-color: var(--color-accent);
+        border-radius: 20px;
+    }
+
+    .header-nav ul {
+        display: flex !important;
+        flex-direction: row;
+        gap: 1rem;
+        position: static;
+        background: none;
+        box-shadow: none;
+    }
+
+    .header-nav a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-family: var(--font-heading);
+        color: var(--color-background);
+    }
+
+    .header-nav li {
+        width: 100%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    h2{
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-family: var(--font-special);
+        color: var(--color-accent);
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 2.8rem;
+    }
+
+    .hero {
+        position: relative;
+    }
+    
+    
+    .hero-volunteer {
+        display: block;
+        position: absolute;
+        top: 4rem;
+        left: 5rem;
+        max-width: 40%;
+        text-align: center;
+        background-color: var(--color-secondary);
+        color: var(--color-background);
+        padding: 1rem 2rem;
+        font-size: clamp(1rem, 2vw, 4rem);
+        text-decoration: none;
+        border-radius: 8px;
+        font-family: var(--font-heading);
+    }
+    
+    .hero-donate {
+        display: block;
+        position: absolute;
+        bottom: 4rem;
+        right: 5rem;
+        background-color: var(--color-accent);
+        color: var(--color-background);
+        padding: 1rem 2rem;
+        font-size: clamp(1rem, 2vw, 4rem);
+        text-decoration: none;
+        border-radius: 8px;
+        font-family: var(--font-heading);
+    }
+
+    .info-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin: 4rem 0;
+    }
+    
+    .about-us,
+    .turtles-matter {
+        background-color: var(--color-background);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px #7d5936;
+    }
+
+    .how-help h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .how-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .how-donate,
+    .how-volunteer {
+        background-color: var(--color-background);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px #7d5936;
+    }
+
+    .how-donate a,
+    .how-volunteer a {
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 2.8rem;
+        color: var(--color-accent);
+        text-decoration: underline;
+    } 
+    
+    .carousel button {
+        font-size: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}

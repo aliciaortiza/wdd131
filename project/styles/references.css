@@ -1,0 +1,40 @@
+:root {
+    --color-primary: #7d5936;
+    --color-accent: #bb3e5c;
+    --color-background: #F4F1EC;
+    --color-text: #042524;
+
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --font-special: 'Playfair Display', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    color: var(--color-primary);
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+}

@@ -1,0 +1,30 @@
+@media (min-width: 500px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        padding: 5px;
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-family: var(--font-special);
+        color: var(--color-accent);
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .how-volunteer a,
+    .how-donate a {
+        font-size: 1.5rem;
+    }
+}
