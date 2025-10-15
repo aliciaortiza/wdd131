@@ -73,6 +73,7 @@
     </header>
 
     <main>
+        
         <section class="hero">
             <div class="hero-images">
                 <picture>
@@ -96,17 +97,48 @@
             </div>
 
             <div class="main-why">
-                <h3>Why Volunteer With Us</h3>
+                <h2>Why Volunteer With Us</h2>
                 <p></p>
             </div>
 
             <div class="main-question">
-                Form Here
+                <h3>Have a Question? Contact Us</h3>
+                <form method="get" class="wf1">
+                    <fieldset>
+                        <legend>User Info</legend>
+                        <label>First Name*<input type="text" name="fname" required></label>
+                        <label>Last Name<input type="text" name="lname"></label>
+                        <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <legend>Your Question</legend>
+                    <textarea id="questions" name="description" rows="5" cols="40" required
+                        placeholder="Write your questions or any comments here..."></textarea>
+                    
+                    <input type="submit" value="Send My Question">
+                    </fieldset>
+                </form>
             </div>
         </section>
 
-        
+        <h2>Participate As A Volunteer</h2>
+        <form method="get" class="wf2">
+            <fieldset>
+                <legend>Applicant Info</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
 
+            <fieldset>
+                <legend>My Plan</legend>
+                <label><input type="radio" name="plan" value="baula" required> Baula</label>
+                <label><input type="radio" name="plan" value="ridley" required> Ridley</label>
+                <label><input type="radio" name="plan" value="carey" required> Carey</label>
+            </fieldset>
+
+            <label>My Ideal Date <input type="date" name="completedDate"></label>
+
+            <input type="submit" value="Send My Plan Request">
+        </form>
     </main>
 
     <footer>

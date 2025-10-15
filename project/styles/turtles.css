@@ -1,3 +1,4 @@
+/*-------GENERAL STYLE-------*/
 :root {
     --color-primary: #7d5936;
     --color-secondary: #2f7b4f;
@@ -54,6 +55,19 @@ h4 {
     font-size: 1.5rem;
 }
 
+a {
+    color: var(--color-accent);
+}
+
+main {
+    align-items: center;
+    margin: 0 5% 0 5%;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+/*--------HEADER--------*/
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -81,19 +95,8 @@ header {
     margin-left: 88%;
 }
 
-a {
-    color: var(--color-accent);
-}
-
 .header-nav ul.show {
     display: flex;
-}
-
-main {
-    align-items: center;
-    margin: 0 5% 0 5%;
-    font-size: 1rem;
-    color: var(--color-text);
 }
 
 nav ul {
@@ -107,6 +110,8 @@ nav ul {
 .header-logo {
     width: 70px;
 }
+
+/*--------HERO----------*/
 
 .hero-volunteer,
 .hero-donate {
@@ -122,6 +127,8 @@ nav ul {
     margin-bottom: 1.5rem;
 }
 
+/*--------INDEX COLUMNS-------*/
+
 .info-columns {
     display: block;
 }
@@ -132,22 +139,7 @@ nav ul {
     border-bottom: 1px solid #7d5936;
 }
 
-.testimonial {
-    display: none;
-}
 
-.testimonial.active {
-    display: block;
-    text-align: center;
-}
-
-.carousel button {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--color-accent);
-} 
 
 .how-volunteer a,
 .how-donate a{
@@ -162,6 +154,12 @@ nav ul {
     box-shadow: 0 4px 12px #7d5936;
 }
 
+/*-------INDEX TESTIMONIES-------*/
+
+.testimonial.active {
+    display: block;
+    text-align: center;
+}
 
 .testimony {
     margin: 4rem 0;
@@ -188,10 +186,6 @@ nav ul {
     transition: opacity 0.5s ease-in-out;
 }
 
-.testimonial.active {
-    display: block;
-}
-
 .testimonial img {
     width: 100%;
     border-radius: 12px;
@@ -206,6 +200,7 @@ nav ul {
     color: var(--color-accent);
 }
 
+/*------FOOTER-----*/
 
 footer {
     background-color: var(--color-primary);
@@ -244,4 +239,72 @@ footer {
 
 .footer-logos img:hover {
     transform: scale(1.1);
+}
+
+/*-----VOLUNTEER FORM 1-----*/
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #042524;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.wf1 legend {
+    color: var(--color-accent);
+    font-size: rem;
+    padding: 0.5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: red;
+    font-size: .9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"] .wf1 input[type="email"] .wf1 input[type="url"] .wf1 input[type="date"] .wf1 select,
+.wf1 input[type="number"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-color: linear-gradient (#9c2c13, #6f200e);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required {
+    border-left: solid 8px #bb3e5c;
+}
+
+.wf1 input:required:valid {
+    border-left: solid 8px #2f7b4f;
 }
