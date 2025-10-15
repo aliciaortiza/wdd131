@@ -13,6 +13,16 @@ const nextBtn = document.querySelector('.next');
 let current = 0;
 let autoSlide;
 
+function ShowHide() {
+    var container = document.getElementsByClassName("container1", "container2", "container3")[0];
+
+    if(container1.style.visibility == "hidden"){
+        container1.style.visibility = "visible";
+    }else{
+        container1.style.visibility = "hidden";
+    }
+}
+
 function showTestimonial(index) {
     testimonials.forEach((t, i) => {
         t.classList.toggle('active', i === index);

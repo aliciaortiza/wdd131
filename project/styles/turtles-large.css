@@ -160,4 +160,77 @@
         margin-left: 5rem;
         margin-right: 5rem;
     }
+    /*------MAIN INFO-----*/
+
+    .main-info {
+        display: grid;
+        grid-template-areas:
+            "top top"
+            "left right";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 2rem;
+        justify-items: end;
+        padding-bottom: 5rem;
+        margin-bottom: 3rem;
+        border-bottom: 0.1px dashed #7d5936;
+    }
+
+    .main-plans {
+        grid-area: top;
+    }
+
+    .main-why {
+        grid-area: left;
+        text-align: justify;
+        border-right: 1px solid #7d5936;
+        border-radius: 30px;
+        padding: .5rem 2%;
+    }
+
+
+    .main-question {
+        grid-area: right;
+    }
+
+    .main-plans {
+        flex-direction: row;
+    }
+
+    /*-----FORM 1-----*/
+
+    .wf1 label {
+        font-size: 2rem;
+    }
+
+    .wf1 input[type="submit"] {
+        font-size: 1.8rem;
+    }
+
+    .wf1 input {
+        font-size: 1.5rem;
+    }
+
+    .wf1 textarea {
+        font-size: 1.5rem;
+    }
+
+
+    .wf2 label {
+        font-size: 2rem;
+    }
+
+    .wf2 legend {
+        font-size: 2.2rem;
+    }
+    /*---FOOTER----*/
+
+    .footer-content p {
+        font-size: 2rem;
+    }
+
+    .footer-logos img{
+        height: 60px;
+        width: auto;
+    }
 }

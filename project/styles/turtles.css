@@ -45,7 +45,7 @@ h3 {
     font-family: var(--font-special);
     color: var(--color-accent);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 h4 {
@@ -62,7 +62,6 @@ a {
 main {
     align-items: center;
     margin: 0 5% 0 5%;
-    font-size: 1rem;
     color: var(--color-text);
 }
 
@@ -73,6 +72,7 @@ header {
     grid-template-columns: 1fr 2fr 1fr;
     align-items:center;
     text-align: center;
+    justify-items: center;
 }
 
 .header-nav button {
@@ -89,10 +89,6 @@ header {
     gap: 0.3rem;
     list-style: none;
     padding: 0;
-}
-
-.header-nav {
-    margin-left: 88%;
 }
 
 .header-nav ul.show {
@@ -114,7 +110,8 @@ nav ul {
 /*--------HERO----------*/
 
 .hero-volunteer,
-.hero-donate {
+.hero-donate,
+.hero-home {
     display: none;
 }
 
@@ -200,78 +197,57 @@ nav ul {
     color: var(--color-accent);
 }
 
-/*------FOOTER-----*/
+/*------MAIN INFO------*/
 
-footer {
-    background-color: var(--color-primary);
-    color: var(--color-background);
-    padding: 2rem;
-    font-size: 1.2rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    gap: 2rem;
-}
-
-.footer-content p {
-    margin-bottom: 0.5rem;
-    text-align: center;
-    line-height: 1.6;
-    grid-column: 2;
-    font-size: 1.8rem;
-}
-
-.footer-logos {
+.main-plans {
     display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    grid-column: 3;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 2rem;
 }
 
-.footer-logos img {
-    height: 40px;
-    width: auto;
-    transition: transform 0.3s ease;
+.main-plans div {
+    flex: 1;
+    position: relative;
+    border: 1px solid #7d5936;
+    border-radius: 12px;
 }
 
-.footer-logos img:hover {
-    transform: scale(1.1);
+.main-plans img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
 
 /*-----VOLUNTEER FORM 1-----*/
+.wf1 {
+    max-width: 500px;
+}
 
 .wf1 fieldset {
     margin: 2rem 0;
-    border: 1px solid #042524;
+    border: 1px solid #7d5936;
     border-radius: 6px;
     padding: .5rem 2%;
 }
 
 .wf1 legend {
-    color: var(--color-accent);
-    font-size: rem;
+    color: var(--color-secondary);
     padding: 0.5rem;
 }
 
 .wf1 label {
     display: block;
     padding-top: 1rem;
-    color: red;
-    font-size: .9rem;
-}
-
-.wf1 div {
-    padding-top: 1rem;
-    color: #445ba9;
-    font-size: .9rem;
+    color: var(--color-primary);
+    font-size: 1rem;
+    text-align: left;
 }
 
 .wf1 input[type="text"],
-.wf1 input[type="tel"] .wf1 input[type="email"] .wf1 input[type="url"] .wf1 input[type="date"] .wf1 select,
-.wf1 input[type="number"] {
+.wf1 input[type="email"],
+.wf1 textarea{
     background-color: #eee;
     display: block;
     border: solid 1px #999;
@@ -279,20 +255,18 @@ footer {
     padding: .75rem;
     color: #555;
     width: 100%;
-    max-width: 400px;
+    max-width: 90%;
     appearance: none;
 }
 
-.wf1 input[type="radio"],
-.wf1 input[type="checkbox"] {
-    margin-right: 6px;
-
+.wf1 textarea {
+    margin-bottom: 2rem;
 }
 
 .wf1 input[type="submit"] {
     border: none;
-    background-color: linear-gradient (#9c2c13, #6f200e);
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-background);
     border-radius: 6px;
     padding: .8rem;
     width: 96%;
@@ -303,8 +277,131 @@ footer {
 
 .wf1 input:required {
     border-left: solid 8px #bb3e5c;
+    max-width: 88.7%;
+}
+
+.wf1 :required {
+    border-left: solid 8px #bb3e5c;
+    max-width: 88.7%;
 }
 
 .wf1 input:required:valid {
     border-left: solid 8px #2f7b4f;
 }
+
+/*-----VOLUNTEER WF2-----*/
+
+.wf2 {
+    background-color: var(--color-background);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-body);
+    max-width: 900px;
+    margin-top: 2rem;
+    margin: auto;
+}
+
+.wf2 h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+}
+
+.wf2 fieldset {
+    border: none;
+    margin-bottom: 2rem;
+    text-align: left;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #7d5936;
+}
+
+.wf2 legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+    text-align: left;
+}
+
+.wf2 label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.wf2 input[type="text"],
+.wf2 input[type="email"],
+.wf2 input[type="date"],
+.wf2 textarea {
+    width: 95%;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    font-family: inherit;
+}
+
+.wf2 input[type="radio"] {
+    margin-right: 0.5rem;
+    transform: scale(1.2);
+}
+
+.wf2 input[type="submit"] {
+    background-color: var(--color-accent);
+    color: white;
+    font-size: 1.6rem;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.wf2 input[type="submit"]:hover {
+    background-color: var(--color-accent-hover);
+}
+
+/*------FOOTER-----*/
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    padding: 1rem;
+    font-size: 0.1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0;
+    gap: 2rem;
+}
+
+.footer-content p {
+    margin: 0;
+    text-align: left;
+    grid-column: 1;
+    font-size: 0.9rem;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    grid-column: 2;
+}
+
+.footer-logos img {
+    height: 30px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logos img:hover {
+    transform: scale(1.1);
+}
+
