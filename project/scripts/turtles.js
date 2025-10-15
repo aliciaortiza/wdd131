@@ -1,3 +1,5 @@
+//footer
+
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
 document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
@@ -6,6 +8,22 @@ document.getElementById("lastModified").textContent = `Last Modification: ${docu
 document.getElementById('menu-toggle').addEventListener('click', () => {
     document.querySelector('.header-nav ul').classList.toggle('show');
 });
+///////////////FORMS
+document.addEventListener("DOMContentLoaded", function () {
+    const form1 = document.querySelector(".wf1");
+    const form2 = document.querySelector(".wf2");
+
+    function handleSubmit(event) {
+        event.preventDefault(); // Evita el envío real del formulario
+        alert("¡Thank you, turtle lover! The submission was successfull. You will receive a response within 24 hours.");
+        event.target.submit(); // Envía el formulario después de mostrar el mensaje
+    }
+
+    form1.addEventListener("submit", handleSubmit);
+    form2.addEventListener("submit", handleSubmit);
+});
+
+//Testimonios
 
 const testimonials = document.querySelectorAll('.testimonial');
 const prevBtn = document.querySelector('.prev');
@@ -13,15 +31,7 @@ const nextBtn = document.querySelector('.next');
 let current = 0;
 let autoSlide;
 
-function ShowHide() {
-    var container = document.getElementsByClassName("container1", "container2", "container3")[0];
 
-    if(container1.style.visibility == "hidden"){
-        container1.style.visibility = "visible";
-    }else{
-        container1.style.visibility = "hidden";
-    }
-}
 
 function showTestimonial(index) {
     testimonials.forEach((t, i) => {
@@ -49,7 +59,6 @@ prevBtn.addEventListener('click', () => {
     resetAutoSlide();
 });
 
-// Swipe support
 let startX = 0;
 document.querySelector('.carousel').addEventListener('touchstart', e => {
     startX = e.touches[0].clientX;
@@ -62,7 +71,6 @@ document.querySelector('.carousel').addEventListener('touchend', e => {
     resetAutoSlide();
 });
 
-// Autoplay every 6 seconds
 function startAutoSlide() {
     autoSlide = setInterval(nextTestimonial, 6000);
 }
@@ -73,4 +81,7 @@ function resetAutoSlide() {
 }
 
 startAutoSlide();
+
+////////////////////
+
 
