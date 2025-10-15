@@ -8,6 +8,32 @@ document.getElementById("lastModified").textContent = `Last Modification: ${docu
 document.getElementById('menu-toggle').addEventListener('click', () => {
     document.querySelector('.header-nav ul').classList.toggle('show');
 });
+
+///////
+
+document.addEventListener("DOMContentLoaded", () => {
+    const amountInput = document.getElementById("donationAmount");
+    const impactDisplay = document.getElementById("impactDisplay");
+    const form = document.getElementById("donationForm");
+    const confirmation = document.getElementById("confirmationMessage");
+
+    amountInput.addEventListener("input", () => {
+        const amount = parseFloat(amountInput.value);
+        const turtles = isNaN(amount) ? 0 : Math.floor(amount * 3);
+        impactDisplay.innerHTML = `Your donation will help rescue <strong>${turtles} turtles</strong>.`;
+    });
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = form.name.value;
+        const amount = form.amount.value;
+        confirmation.style.display = "block";
+        confirmation.textContent = `Thank you, ${name}! Your donation of $${amount} has been received. 🐢`;
+        form.reset();
+        impactDisplay.innerHTML = `Your donation will help rescue <strong>0 turtles</strong>.`;
+    });
+});
+
 ///////////////FORMS
 document.addEventListener("DOMContentLoaded", function () {
     const form1 = document.querySelector(".wf1");

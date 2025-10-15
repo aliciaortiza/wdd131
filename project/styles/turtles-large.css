@@ -110,6 +110,20 @@
         font-family: var(--font-heading);
     }
 
+    .hero-volunteer-donate {
+            display: block;
+            position: absolute;
+            bottom: 4rem;
+            right: 5rem;
+            background-color: var(--color-accent);
+            color: var(--color-background);
+            padding: 1rem 2rem;
+            font-size: clamp(1rem, 2vw, 4rem);
+            text-decoration: none;
+            border-radius: 8px;
+            font-family: var(--font-heading);
+        }
+
     .info-columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -139,7 +153,8 @@
     }
 
     .how-donate,
-    .how-volunteer {
+    .how-volunteer,
+    .how-home {
         background-color: var(--color-background);
         padding: 2rem;
         border-radius: 12px;
@@ -147,11 +162,12 @@
     }
 
     .how-donate a,
-    .how-volunteer a {
+    .how-volunteer a,
+    .how-home a {
         display: inline-block;
         margin-top: 1rem;
         font-size: 2.8rem;
-        color: var(--color-accent);
+        color: var(--color-background);
         text-decoration: underline;
     } 
     
@@ -223,6 +239,55 @@
     .wf2 legend {
         font-size: 2.2rem;
     }
+
+    /*---------DONATE-------*/
+
+    .donate-grid {
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            padding: 2rem;
+            align-items: start;
+        }
+    
+        .donate-form {
+            background-color: var(--color-background);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    
+        .donate-info {
+            background-color: #f5fdf7;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+    
+    .donate-impact h3 {
+        font-size: 3rem;
+    }
+
+    .donate-impact p {
+        font-size: 2.1rem;
+        margin: 0.5rem 0;
+    }
+
+    .donate-usage h4 {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .donate-usage ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .donate-usage li {
+        margin: 0.5rem 0;
+        font-size: 2rem;
+    }
+
     /*---FOOTER----*/
 
     .footer-content p {

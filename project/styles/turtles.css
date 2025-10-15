@@ -111,7 +111,8 @@ nav ul {
 
 .hero-volunteer,
 .hero-donate,
-.hero-home {
+.hero-home,
+.hero-volunteer-donate {
     display: none;
 }
 
@@ -340,7 +341,8 @@ nav ul {
 
 .wf2 input[type="text"],
 .wf2 input[type="email"],
-.wf2 input[type="date"] {
+.wf2 input[type="date"],
+.wf2 input[type="number"] {
     width: 95%;
     padding: 0.8rem;
     font-size: 1.3rem;
@@ -389,6 +391,51 @@ nav ul {
 
 .wf2 input:required:valid {
     border-left: solid 8px #2f7b4f;
+}
+
+/*-------DONATE---------*/
+
+.donate-grid {
+    grid-template-columns: 1fr;
+}
+
+#confirmationMessage {
+    font-size: 1.4rem;
+    background-color: #e6ffe6;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.donate-impact h3 {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+}
+
+.donate-impact p {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+
+.donate-usage h4 {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.donate-usage ul {
+    list-style: none;
+    padding: 0;
+}
+
+.donate-usage li {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.donate-info img {
+    max-width: 70%;
+    border-radius: 15px;
+    border: 0.1px solid #7d5936;
+    
 }
 
 /*------FOOTER-----*/
