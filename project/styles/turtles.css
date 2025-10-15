@@ -223,6 +223,7 @@ nav ul {
 /*-----VOLUNTEER FORM 1-----*/
 .wf1 {
     max-width: 500px;
+    margin: auto;
 }
 
 .wf1 fieldset {
@@ -365,6 +366,20 @@ nav ul {
     background-color: var(--color-accent-hover);
 }
 
+.wf2 input:required {
+    border-left: solid 8px #bb3e5c;
+    max-width: 88.7%;
+}
+
+.wf2 :required {
+    border-left: solid 8px #bb3e5c;
+    max-width: 88.7%;
+}
+
+.wf2 input:required:valid {
+    border-left: solid 8px #2f7b4f;
+}
+
 /*------FOOTER-----*/
 
 footer {
@@ -372,6 +387,7 @@ footer {
     color: var(--color-background);
     padding: 1rem;
     font-size: 0.1rem;
+    margin-top: 2rem;
 }
 
 .footer-content {
